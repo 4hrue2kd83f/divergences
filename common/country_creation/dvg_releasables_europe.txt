@@ -662,9 +662,7 @@ GRE = { #Greece
 }
 
 CRE = { #Crete
-	states = {
-		STATE_CRETE
-	}
+	provinces = { "x0B9BBE" "x6010A0" }
 	
 	ai_will_do = { always = no }
 }
@@ -854,6 +852,11 @@ BGY = { #Little Burgundy
 	ai_will_do = { always = no }
 }
 AKZ = { #Ashkenaz
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+TAR = { #Tartars
 	use_culture_states = yes
 
 	ai_will_do = { always = no }
