@@ -1286,7 +1286,12 @@
 		region_state:KOR = {
 			create_pop = {
 				culture = korean
-				size = 1274480
+				size = 1052700
+			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 526320
 			}
 		}
 	}
@@ -1296,22 +1301,27 @@
 				culture = korean
 				size = 2190200
 			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 1265715
+			}
 		}
 	}
 	s:STATE_SEOUL = {
 		region_state:KOR = {
 			create_pop = {
 				culture = korean
-				size = 2565040
+				size = 1870605
 			}
 			create_pop = {
-				culture = japanese
+				culture = korean
 				religion = mahayana
-				size = 100
+				size = 709665
 			}
 			create_pop = {
 				culture = japanese
-				size = 213
+				size = 12421
 			}
 		}
 	}
@@ -1319,7 +1329,12 @@
 		region_state:KOR = {
 			create_pop = {
 				culture = korean
-				size = 1376964
+				size = 2404185
+			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 1635285
 			}
 			create_pop = {
 				culture = japanese
@@ -1334,7 +1349,8 @@
 			}
 			create_pop = {
 				culture = japanese
-				size = 306
+				pop_type = aristocrats
+				size = 2306
 			}
 			create_pop = {
 				culture = japanese
@@ -1347,17 +1363,33 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = korean
-				size = 1763840
+				size = 518728
+			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 1245112
+			}
+			create_pop = {
+				culture = japanese
+				pop_type = aristocrats
+				size = 3121
 			}
 			create_pop = {
 				culture = japanese
 				religion = mahayana
-				size = 765
+				pop_type = aristocrats
+				size = 6548
+			}
+			create_pop = {
+				culture = japanese
+				pop_type = aristocrats
+				size = 315231
 			}
 			create_pop = {
 				culture = japanese
 				religion = mahayana
-				size = 327
+				size = 842327
 			}
 		}
 	}

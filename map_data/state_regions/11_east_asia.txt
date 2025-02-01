@@ -1260,8 +1260,14 @@ STATE_PYONGYANG = {
         bg_coal_mining = 60
         bg_iron_mining = 36
         bg_lead_mining = 36
+        bg_gold_mining = 8
         bg_logging = 15
         bg_fishing = 8
+    }
+    resource = {
+        type = bg_gold_fields
+        depleted_type = bg_gold_mining
+        undiscovered_amount = 4
     }
     naval_exit_id = 3057
 }
