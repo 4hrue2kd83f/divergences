@@ -3227,7 +3227,7 @@
 					building={
 						type="building_manor_house"
 						country="c:JAP"
-						levels=1
+						levels=2
 						region="STATE_KANTO"
 					}
 				}
@@ -3362,7 +3362,20 @@
 				reserves=1
 				activate_production_methods={ "pm_handcrafted_furniture" "pm_automation_disabled" "pm_luxury_furniture" }
 			}
-			create_building={	##Divergences change
+			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:JAP"
+						levels=3
+						region="STATE_CHUBU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_craftsman_sewing" }
+			}
+			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
 					building={
@@ -3477,7 +3490,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" }
+				activate_production_methods={ "pm_iron_frame_buildings" }
 			}				
 			create_building={
 				building="building_university"
@@ -3496,12 +3509,12 @@
 					building={
 						type="building_textile_mills"
 						country="c:JAP"
-						levels=3
+						levels=10
 						region="STATE_KANSAI"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_craftsman_sewing" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_no_luxury_clothes" }
 			}
 			create_building={
 				building="building_paper_mills"
@@ -3530,30 +3543,17 @@
 				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
-				building="building_food_industry"
-				add_ownership={
-					building={
-						type="building_food_industry"
-						country="c:JAP"
-						levels=2
-						region="STATE_KANSAI"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
-			}
-			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
 						country="c:JAP"
-						levels=2
+						levels=4
 						region="STATE_KANSAI"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture" "pm_automation_disabled" "pm_luxury_furniture" }
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_automation_disabled" "pm_no_luxuries" }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -3593,32 +3593,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" } ##Divergences change
-			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:JAP"
-						levels=1
-						region="STATE_KANSAI"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_silk_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:JAP"
-						levels=3
-						region="STATE_KANSAI"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_silk_plantation" "pm_road_carts"   }
 			}
 			create_building={
 				building="building_tobacco_plantation"
@@ -3714,19 +3688,6 @@
 				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
 			}
 			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:JAP"
-						levels=3
-						region="STATE_KYUSHU"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
-			}
-			create_building={
 				building="building_dye_plantation"
 				add_ownership={
 					building={
@@ -3764,6 +3725,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts"   }
+			}
+			create_building={
+				building="building_silk_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:JAP"
+						levels=3
+						region="STATE_KYUSHU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_silk_plantation" "pm_road_carts"   }
 			}
 			create_building={
 				building="building_coal_mine"
@@ -3842,6 +3816,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
+			}
+			create_building={
+				building="building_food_industry"
+				add_ownership={
+					building={
+						type="building_food_industry"
+						country="c:JAP"
+						levels=2
+						region="STATE_CHUGOKU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
 			}
 			create_building={
 				building="building_military_shipyards"
@@ -3974,6 +3961,19 @@
 				activate_production_methods={ "pm_forest_glass" "pm_ceramics" "pm_manual_glassblowing" }
 			}
 			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_textile_mills"
+						country="c:JAP"
+						levels=3
+						region="STATE_SHIKOKU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_no_luxury_clothes" }
+			}
+			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
@@ -3984,7 +3984,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" } ##Divergences change
+				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" } ##Divergences change
 			}
 			create_building={
 				building="building_rice_farm"
@@ -3992,7 +3992,7 @@
 					building={
 						type="building_manor_house"
 						country="c:JAP"
-						levels=1
+						levels=3
 						region="STATE_SHIKOKU"
 					}
 				}
@@ -4090,7 +4090,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" }
+				activate_production_methods={ "pm_wooden_buildings" }
 			} 
 			create_building={
 				building="building_arms_industry"
