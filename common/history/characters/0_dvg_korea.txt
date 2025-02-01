@@ -8,7 +8,6 @@
             birth_date = 1804.07.21
             #dna = dna_king_geung_yi
             interest_group = ig_landowners
-
             traits = {
 		meticulous
             	immortal
@@ -35,7 +34,7 @@
                 set_variable = Eok_yi_variable
             }
         }
-
+    }
     c:TYT = {
         create_character = {
             ruler = yes
@@ -44,6 +43,7 @@
             last_name = Toyotomi
             culture = cu:japanese
             ideology = ideology_traditionalist
+            interest_group = ig_landowners
             birth_date = 1799.10.02
             traits = {
 		charismatic
