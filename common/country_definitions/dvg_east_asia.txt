@@ -222,19 +222,6 @@ KOR = { #Korea
 	capital = STATE_SEOUL
 }
 
-TYT = { #Toyotomi
-	color = { 228 132 76 }
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { japanese }
-	capital = STATE_YEONGNAM
-
-	religion = mahayana
-	valid_as_home_country_for_separatists = no
-}
-
 JAP = { #Japan
 	color = { 194 53 60 }
 	country_type = unrecognized
@@ -630,4 +617,16 @@ TSR = { #Tenasserim
 	
 	cultures = { thai malay karen }
 	capital = STATE_TENASSERIM
+}
+
+TYT = { #Toyotomi
+	color = { 228 132 76 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }
+	capital = STATE_BUSAN
+
+	religion = mahayana
 }
