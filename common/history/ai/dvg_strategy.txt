@@ -317,7 +317,7 @@
 			50 = { set_strategy = ai_strategy_maintain_power_balance }
 			50 = { set_strategy = ai_strategy_territorial_expansion }
 		}
-		set_strategy = ai_strategy_economic_imperialism
+		set_strategy = ai_strategy_maintain_power_balance
 	}
 	c:MUG = {
 		random_list = {
