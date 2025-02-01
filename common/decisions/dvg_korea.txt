@@ -1,0 +1,33 @@
+﻿dvg_reopen_unsan_mine = {
+	is_shown = {
+        NOT = { has_variable = kor_has_unsan_struggles }
+        any_scope_state = {
+            state_region = s:STATE_PYONGYANG
+            has_variable = state_unsan_mine_depleted
+        }
+	}
+
+	possible = {
+        NOT = { has_variable = kor_has_unsan_struggles }
+        any_scope_state = {
+            state_region = s:STATE_PYONGYANG
+            has_variable = state_unsan_mine_depleted
+        }
+        has_technology_researched = watertube_boiler
+        has_technology_researched = nitroglycerin
+	}
+
+	when_taken = {
+        random_scope_state = {
+            limit = {
+            state_region = s:STATE_PYONGYANG
+            has_variable = state_unsan_mine_depleted
+            }
+            trigger_event = { id = dvg_kor_flavor_events.3 } #reactivate the Unsan mine
+        }
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}

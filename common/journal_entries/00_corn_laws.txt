@@ -1,0 +1,211 @@
+﻿je_corn_laws = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		NOT = { has_variable = corn_laws_abolished }
+		ig:ig_landowners = {
+			is_marginal = no
+		}
+		OR = {
+			has_export_priority_tariffs = g:grain
+			has_law = law_type:law_isolationism
+			has_law = law_type:law_mercantilism
+		}
+		NOT = { c:KOR ?= THIS }
+	}
+
+	possible = {
+		market_capital.market = {
+			mg:grain = { 
+				market_goods_pricier > 0.25 
+			}
+		}
+		OR = {
+			has_law = law_type:law_isolationism
+			AND = {
+				has_law = law_type:law_mercantilism
+				has_export_priority_tariffs = g:grain
+			}
+		}
+		ig:ig_landowners = {
+			is_powerful = yes
+			is_in_government = yes
+		}
+		NOT = { THIS ?= c:KOR }
+	}
+
+	complete = {
+		has_law = law_type:law_free_trade
+	}
+
+	on_complete = {
+		set_variable = corn_laws_abolished
+		trigger_event = { id = corn_laws.1 }
+		show_as_tooltip = {
+			if = {
+				limit = {
+					ig:ig_landowners = {
+						is_in_government = yes
+						leader = {
+							NOT = { has_ideology = ideology:ideology_market_liberal }
+						}
+					}
+				}
+				ig:ig_landowners = {
+					add_modifier = {
+						name = repealed_corn_laws
+						months = long_modifier_time
+					}
+				}
+			}
+			add_loyalists = {
+				value = 0.1
+				pop_type = laborers
+			}
+		}
+	}
+
+	invalid = {
+		ig:ig_landowners = {
+			is_marginal = yes
+		}
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			100 = 0
+			10 = corn_laws.2
+			10 = corn_laws.3
+			10 = corn_laws.4
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+je_kor_rice_granary = {
+    icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+    group = je_group_foreign_affairs
+
+	complete = {
+		has_law = law_type:law_free_trade
+		OR = {
+			has_law = law_type:law_agrarianism		
+			has_law = law_type:law_industry_banned	
+			has_law = law_type:law_extraction_economy
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = dvg_kor_flavor_events.1 }
+		show_as_tooltip = {
+			add_modifier = {
+				name = kor_granary_of_asia
+			}
+			add_loyalists = {
+				value = 0.1
+				pop_type = aristocrats
+			}
+			add_loyalists = {
+				value = 0.1
+				pop_type = farmers
+			}
+		}
+	}
+
+	fail = {
+		market_capital.market = {
+			mg:grain = { 
+				market_goods_pricier > 0.25 
+			}
+		}
+	}
+
+	on_fail = {
+		set_variable = kor_banggokyeong
+		add_journal_entry = { type = je_kor_banggokryeong , target = THIS }
+	}
+
+	invalid = {
+		NOT = { has_subject_relation_with = c:JAP }
+	}
+
+	on_invalid = {
+		trigger_event = { id = dvg_korea. }
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			100 = 0
+			10 = corn_laws.2
+			10 = corn_laws.3
+			10 = corn_laws.4
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+
+je_kor_banggokryeong = {
+    icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+    group = je_group_foreign_affairs
+
+	timeout = 360
+
+	on_timeout = {
+		trigger_event = { id = red_scare.20 }
+	}
+
+	complete = {
+		
+	}
+
+	on_complete = {
+		trigger_event = { id = dvg_korea.1 }
+		show_as_tooltip = {
+			add_modifier = {
+				name = kor_granary_of_asia
+			}
+			add_loyalists = {
+				value = 0.1
+				pop_type = aristocrats
+			}
+			add_loyalists = {
+				value = 0.1
+				pop_type = farmers
+			}
+		}
+	}
+
+	fail = {
+		market_capital.market = {
+			mg:grain = { 
+				market_goods_pricier > 0.25 
+			}
+		}
+	}
+
+	on_fail = {
+		set_variable = kor_banggokyeong
+		add_journal_entry = { type = je_kor_banggokryeong , target = THIS }
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			100 = 0
+			10 = corn_laws.2
+			10 = corn_laws.3
+			10 = corn_laws.4
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}
