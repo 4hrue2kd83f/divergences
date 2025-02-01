@@ -5,6 +5,10 @@
 			type = vassal
 		}
 		create_diplomatic_pact = {
+			country = c:TYT
+			type = vassal
+		}
+		create_diplomatic_pact = {
 			country = c:KOR
 			type = tributary
 		}

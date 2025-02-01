@@ -562,7 +562,7 @@
 			owned_provinces = { "x34B782" "x8ACAAA" "xA48A8B" "xAE0221" "xB0D000" "xBC0C5A" "xC81C12" "xD42CA8" "xF09080" "xF91D98" }
 		}
 		create_state = {
-			country = c:JAP
+			country = c:TYT
 			owned_provinces = { "xB0D080" }
 			state_type = unincorporated
 		}
