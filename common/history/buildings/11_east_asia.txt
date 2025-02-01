@@ -3133,6 +3133,19 @@
 	s:STATE_KANTO={
 		region_state:JAP={
 			create_building={
+				building="building_food_industry"
+				add_ownership={
+					building={
+						type="building_food_industry"
+						country="c:JAP"
+						levels=2
+						region="STATE_KANTO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
+			}
+			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
@@ -3175,7 +3188,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:JAP"
-						levels=3
+						levels=2
 						region="STATE_KANTO"
 					}
 				}
@@ -3227,7 +3240,7 @@
 					building={
 						type="building_manor_house"
 						country="c:JAP"
-						levels=3
+						levels=2
 						region="STATE_KANTO"
 					}
 				}
@@ -3295,7 +3308,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" }
+				activate_production_methods={ "pm_iron_frame_buildings" }
 			}				
 			create_building={
 				building="building_paper_mills"
@@ -3491,6 +3504,32 @@
 				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
+				building="building_food_industry"
+				add_ownership={
+					building={
+						type="building_food_industry"
+						country="c:JAP"
+						levels=2
+						region="STATE_KANSAI"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:JAP"
+						levels=2
+						region="STATE_KANSAI"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_automation_disabled" "pm_luxury_furniture" }
+			}
+			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
@@ -3602,7 +3641,7 @@
 					building={
 						type="building_textile_mills"
 						country="c:JAP"
-						levels=2
+						levels=3
 						region="STATE_KYUSHU"
 					}
 				}
@@ -3971,7 +4010,7 @@
 				add_ownership={
 					country={
 						country="c:KOR"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -3995,11 +4034,11 @@
 				add_ownership={
 					country={
 						country="c:KOR"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_wooden_buildings" }
+				activate_production_methods={ "pm_iron_frame_buildings" }
 			} 
 			create_building={
 				building="building_arms_industry"
@@ -4020,7 +4059,7 @@
 					building={
 						type="building_glassworks"
 						country="c:KOR"
-						levels=3
+						levels=1
 						region="STATE_SEOUL"
 					}
 				}
@@ -4059,7 +4098,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:KOR"
-						levels=2
+						levels=1
 						region="STATE_SEOUL"
 					}
 				}
@@ -4090,7 +4129,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
@@ -4106,19 +4145,6 @@
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"   }
 			}
 			create_building={
-				building="building_food_industry"
-				add_ownership={
-					building={
-						type="building_food_industry"
-						country="c:KOR"
-						levels=3
-						region="STATE_SEOUL"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
-			}
-			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -4127,7 +4153,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_basic_port" }
 			}
 			create_building={	
 				building="building_tooling_workshops"
@@ -4243,7 +4269,7 @@
 					building={
 						type="building_glassworks"
 						country="c:KOR"
-						levels=2
+						levels=1
 						region="STATE_YANGHO"
 					}
 				}
@@ -4269,7 +4295,7 @@
 					building={
 						type="building_manor_house"
 						country="c:KOR"
-						levels=4
+						levels=5
 						region="STATE_YANGHO"
 					}
 				}
@@ -4282,12 +4308,23 @@
 					building={
 						type="building_manor_house"
 						country="c:KOR"
-						levels=3
+						levels=4
 						region="STATE_YANGHO"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"   }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:KOR"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 		region_state:JAP={
@@ -4365,24 +4402,35 @@
 				add_ownership={
 					country={
 						country="c:KOR"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 			create_building={
-				building="building_glassworks"
+				building="building_construction_sector"
 				add_ownership={
-					building={
-						type="building_glassworks"
+					country={
 						country="c:KOR"
 						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_iron_frame_buildings" }
+			} 
+			create_building={
+				building="building_tobacco_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KOR"
+						levels=4
 						region="STATE_PYONGYANG"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_forest_glass" "pm_ceramics" "pm_manual_glassblowing" }
+				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"   }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -4403,7 +4451,7 @@
 					building={
 						type="building_manor_house"
 						country="c:KOR"
-						levels=2
+						levels=3
 						region="STATE_PYONGYANG"
 					}
 				}

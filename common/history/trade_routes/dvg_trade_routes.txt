@@ -1,5 +1,5 @@
 ﻿TRADE_ROUTES = {
-	c:SCA = {
+	c:SCA ?= {
 		create_trade_route = {
 			goods = silk
 			level = 1
@@ -13,7 +13,7 @@
 			target = c:BRG.market
 		}
 	}
-	c:BGL = {
+	c:BGL ?= {
 		create_trade_route = {
 			goods = small_arms
 			level = 2
@@ -39,7 +39,7 @@
 			target = c:SPA.market
 		}
 	}
-	c:MYS = {
+	c:MYS ?= {
 		create_trade_route = {
 			goods = small_arms
 			level = 2
@@ -47,7 +47,7 @@
 			target = c:DUA.market
 		}
 	}
-	c:BEO = {
+	c:BEO ?= {
 		create_trade_route = {
 			goods = iron
 			level = 1
@@ -55,7 +55,7 @@
 			target = c:LOT.market
 		}
 	}
-	c:LOT = {
+	c:LOT ?= {
 		create_trade_route = {
 			goods = ammunition
 			level = 1
@@ -63,7 +63,7 @@
 			target = c:CNF.market
 		}
 	}
-	c:TWT = {
+	c:TWT ?= {
 		create_trade_route = {
 			goods = paper
 			level = 2
@@ -89,7 +89,7 @@
 			target = c:JAP.market
 		}
 	}
-	c:DZU = {
+	c:DZU ?= {
 		create_trade_route = {
 			goods = iron
 			level = 1
@@ -109,7 +109,7 @@
 			target = c:AFG.market
 		}
 	}
-	c:PRO = {
+	c:PRO ?= {
 		create_trade_route = {
 			goods = small_arms
 			level = 2
@@ -123,7 +123,7 @@
 			target = c:ARN.market
 		}
 	}
-	c:ARN = {
+	c:ARN ?= {
 		create_trade_route = {
 			goods = iron
 			level = 2
@@ -131,19 +131,31 @@
 			target = c:DUA.market
 		}
 	}
-	c:KOR = {
+	c:KOR ?= {
 		create_trade_route = {
-			goods = dyes
+			goods = dye
 			level = 2
 			direction = import
 			target = c:JAP.market
 		}
+		create_trade_route = {
+			goods = tobacco
+			level = 2
+			direction = export
+			target = c:JAP.market
+		}
 	}
-	c:JAP = {
+	c:JAP ?= {
 		create_trade_route = {
 			goods = grain
 			level = 8
 			direction = import
+			target = c:KOR.market
+		}
+		create_trade_route = {
+			goods = clothes
+			level = 3
+			direction = export
 			target = c:KOR.market
 		}
 		create_trade_route = {
