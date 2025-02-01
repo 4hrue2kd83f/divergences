@@ -610,7 +610,7 @@
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_isolationism
+		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_closed_borders
 		activate_law = law_type:law_censorship
 

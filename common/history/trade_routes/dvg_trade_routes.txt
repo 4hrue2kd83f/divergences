@@ -131,4 +131,26 @@
 			target = c:DUA.market
 		}
 	}
+	c:KOR = {
+		create_trade_route = {
+			goods = dyes
+			level = 2
+			direction = import
+			target = c:JAP.market
+		}
+	}
+	c:JAP = {
+		create_trade_route = {
+			goods = grain
+			level = 8
+			direction = import
+			target = c:KOR.market
+		}
+		create_trade_route = {
+			goods = iron
+			level = 3
+			direction = import
+			target = c:KOR.market
+		}
+	}
 }
