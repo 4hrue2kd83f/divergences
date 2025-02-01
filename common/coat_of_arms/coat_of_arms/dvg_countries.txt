@@ -15338,3 +15338,15 @@ FGH = { #Fang Hu
 		color2 = "blue"
 	}
 }
+
+TYT = { #Toyotomi
+	
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	
+	colored_emblem = {
+		texture = "ce_tyt.dds"
+		color1 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }	
+	}	
+}

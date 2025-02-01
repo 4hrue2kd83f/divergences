@@ -6233,3 +6233,12 @@ AFN = { #Vinland
 		}
 	}
 }
+
+TYT = { # Toyotomi
+	flag_definition = {
+		coa = TYT
+		subject_canton = TYT	
+		allow_overlord_canton = no					
+		priority = 1
+	}
+}

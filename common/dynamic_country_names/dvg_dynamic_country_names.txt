@@ -1861,6 +1861,19 @@ JAP = {
 	}
 }
 
+TYT = {
+	dynamic_country_name = {
+		name = dyn_c_toyotomi_clan
+		
+		is_main_tag_only = yes
+		priority = 1000
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+}
+
 SLV = {
 	dynamic_country_name = {
 		name = dyn_c_nitra

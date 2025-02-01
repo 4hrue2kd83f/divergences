@@ -136,19 +136,17 @@
 	#East Asia
 	c:KOR = {
 		create_political_lobby = {  
+			type = lobby_anti_overlord
+			target = c:JAP
+			add_interest_group = ig:ig_devout
+			add_interest_group = ig:ig_intelligentsia
+		}
+		create_political_lobby = {  
 			type = lobby_pro_country  
-			target = c:MCH
+			target = c:JAP
 			add_interest_group = ig:ig_landowners
-		}
-		create_political_lobby = {  
-			type = lobby_anti_country  
-			target = c:JAP
 			add_interest_group = ig:ig_armed_forces
-		}
-		create_political_lobby = {  
-			type = lobby_pro_country  
-			target = c:JAP
-			add_interest_group = ig:ig_industrialists
+			add_interest_group = ig:ig_petty_bourgeoisie
 		}
 	}
 

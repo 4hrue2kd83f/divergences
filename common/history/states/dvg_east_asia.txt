@@ -549,9 +549,8 @@
 	}
 	s:STATE_BUSAN = {
 		create_state = {
-			country = c:JAP
+			country = c:TYT
 			owned_provinces = { "x076864" "x305080" "x31D000" "x806A04" "x9BA8B5" "xA00BB8" "xC3F34F" }
-			state_type = unincorporated
 		}
 		
 		add_homeland = cu:korean

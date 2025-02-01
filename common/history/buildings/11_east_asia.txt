@@ -3261,6 +3261,19 @@
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts"   }
 			}
 			create_building={
+				building="building_cotton_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:JAP"
+						levels=3
+						region="STATE_KANTO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"   }
+			}
+			create_building={
 				building="building_iron_mine"
 				add_ownership={
 					building={
@@ -4353,6 +4366,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"   }
+			}
+			create_building={
+				building="building_cotton_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KOR"
+						levels=3
+						region="STATE_YANGHO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"   }
 			}
 			create_building={
 				building="building_port"
